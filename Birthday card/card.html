@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Quotes</title>
+  <style>
+    body{
+        background-color:rgb(239, 150, 115);
+    }
+    .card{
+        text-align: center;
+        margin-top: 12%;
+        margin-left: 40%;
+        width: 25%;
+        height: 50vh;
+        border: 2px solid crimson;
+        background-color: rgb(230, 111, 65);
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px 4px rgb(68, 65, 65);
+    }
+    .card:hover{
+        background-color:rgb(241, 91, 32) ;
+    }
+    h2{
+        color: white;
+        margin-top: 20px;
+        padding-top: 20px;
+        margin-bottom: 50px;
+        font-family: sans-serif;
+    }
+    #quote{
+        margin-bottom: 40px;
+        color: white;
+        font-size: 25px;
+        font-family:cursive;
+        
+    }
+
+    button{
+        color: rgb(234, 72, 8);
+        border: solid 2px rgb(235, 166, 139);
+        border-radius: 3px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="card">
+    <h2>Birthday Quotes</h2>
+    <p id="quote">HAPPY BIRTHDAY!</p>
+    <button  onclick="Quote()">Get Quote</button>
+  </div>
+  <script>
+    const birthdayQuotes = [
+  "Count your life by smiles, not tears. Count your age by friends, not years. Happy birthday! ",
+  "Today is the oldest you've ever been, and the youngest you'll ever be again. Happy birthday!",
+  "May your birthday be filled with sunshine and smiles, laughter, love, and cheer.",
+  "A birthday is like a new year, and a chance to start fresh with new goals and dreams.",
+  "Wishing you a day that's as special as you are! Happy birthday!",];
+
+function Quote() {
+  const quoteElement = document.getElementById('quote');
+  const randomIndex = Math.floor(Math.random() * birthdayQuotes.length);
+  const randomQuote = birthdayQuotes[randomIndex];
+  quoteElement.textContent = randomQuote;
+}
+
+  </script>
+</body>
+</html>
