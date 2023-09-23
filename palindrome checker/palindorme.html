@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome checker</title>
+        <style>
+            .header{
+                padding: 15px;
+                text-align: center;
+                background:#23797b;
+                color: white;
+                font-size: 30px;
+            }
+            *{
+                text-align: center;
+            }
+            
+            input[type="text"]{
+                padding: 8px;
+                font-size: 18px;
+            }
+            button{
+                padding: 8px 18px;
+                font-size: 18px;
+                background-color: #23797b;
+                color: white;
+                border-radius: 4px;
+                box-shadow: 0px 3px 5px rgb(101, 96, 96) ;
+                cursor:grabbing;
+            }
+            button:hover{
+                background-color: #32bfc2;
+            }
+            h2{
+                margin-top:200px;
+            }
+            .answer{
+                margin-top: 30px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <!-- Header-->
+        <div class="header">
+            <h1>Palindrome checker</h1>
+        </div>
+
+        
+        
+
+        <h2 class="h4">Palindrome or Not</h2>
+        
+        <!--input area-->
+        <div class="container">
+            <input type="text" id="inputtext" placeholder="Enter a string">
+            <button onclick="checkPalindrome()">Check</button>
+            <p class="answer" id="answer"></p>
+        </div>
+
+        
+        <script>
+            function checkPalindrome(){
+                var input=document.getElementById("inputtext").value;
+                var reverseI=input.split("").reverse().join("");
+
+                if(input=== reverseI){
+                    document.getElementById("answer").innerHTML=input+" is a Palindrome string!";
+                }
+                else{
+                    document.getElementById("answer").innerHTML=input+" is NOT Palindrome string!";
+                }
+            }
+        </script>
+    </body>
+</html>
