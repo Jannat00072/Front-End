@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CGC</title>
+        
+        <style>
+           
+            #container{
+                display: flex;
+                
+            }
+            
+            
+            #name{
+                width: 60%;
+                margin-left:14% ;
+                margin-top: -20%;
+                font-size: 50px;
+            }
+            
+           #faname,#email,#mname,#fname{
+            width: 250px;
+           }
+           
+            h2{
+                text-align: center;
+            }
+            .form{
+                
+                width: 50%;
+                height: 80%;
+                border: 3px  grey solid;
+                border-radius: 5px;
+                box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.63);
+                padding-left: 20px;
+                margin: 40px;
+                
+                margin-left: 450px;
+                transition: 0.4s;
+                
+
+            }
+            #contact{
+                margin-right: 50px;
+                width: 250px;
+
+            }
+            #address{
+                margin-right: 50px;
+                width: 200px;
+            }
+            #course{
+                margin-right: 50px;
+            }
+            #dob{
+                width: 100px;
+            }
+            
+            .gender{
+                margin-right: 165px;
+                
+            }
+            #button{
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                
+                
+                
+                
+            }
+            button:hover{
+                background-color:lightblue;
+                
+            }
+
+            #reset{
+                margin-top: 5%;
+                margin-left: 250px;
+                margin-bottom: -50px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+    <div id="Container">
+        <div id="logo"> 
+            <img src="logo.webp" alt="main logo">
+        </div>
+        <div id="name">
+            <h3>CHANDIGARH GROUP OF COLLEGES JHANJERI MOHALI, PUNJAB (140307)</h3>
+        </div>
+    </div>
+
+    <div class="form">
+        <h2>Registration Form</h2>
+        <form id="registration" method="post" >
+    <!--Name-->
+            <label>Name: </label>
+            <input type="text" name="fname" id="fname" placeholder="Enter your full name" required>
+            <br> <br>
+    <!-- Father's Name-->
+            <label>Father's Name: </label>
+            <input type="text" name="faname" id="faname" placeholder="Father's Name" required>
+            <br> <br>
+    <!-- Mother's Name-->   
+            <label>Mother's Name: </label>
+            <input type="text" name="mname" id="mname" placeholder="Mother's Name" required>
+            <br> <br>
+    <!-- Contact-->   
+            <label>Contact: </label>
+            <input type="tel" name="contact" id="contact" placeholder="Mobile Number" required>
+    <!-- date of birth-->   
+            <label>DOB: </label>
+            <input type="date" name="dob" id="dob" placeholder="Date of Birth">
+            <br> <br>
+    <!--Email-->   
+            <label>Email: </label>
+            <input type="email" name="email" id="email" placeholder="Enter valid email" required>
+            <br><br>
+    <!-- Gender-->   
+            <div class="gender">
+                <label>Gender: </label>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="male" >
+            <span id="male">Male</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="female" >
+            <span id="female">Female</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="others" >
+            <span id="others">Others</span>
+            <br> <br>
+
+    <!--Address-->
+            <label>Address: </label>
+            <input type="text" name="address" id="address" placeholder="Enter Address with pincode">
+            
+            <label for="Country">Country: </label>
+            <select name="country" id="country">
+                <option value="Country">Select Country</option>
+                <option value="Nepal">Nepal</option>
+                <option value="bhutan">Bhutan</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uae">UAE</option>
+                <option value="africa">Africa</option>
+            </select>
+            <br><br>
+
+
+            <div class="category">
+                <label>Category: </label>
+            </div>
+            <br>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="category" id="general" >
+            <span id="general">General</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="category" id="obc" >
+            <span id="obc">OBC</span>
+            &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="category" id="sc" >
+            <span id="sc">SC/ST</span>
+            <br> <br>
+
+
+    <!-- Course interest-->   
+            <label for="Course interest">Course: </label>
+            <select name="course" id="course">
+                <option value="Select course">4 year program</option>
+                <option value="cse">BTech CSE</option>
+                <option value="ece">BTech ECE</option>
+                <option value="aiml">BTech CSE AIML</option>
+                <option value="pharmacy">B.Pharma</option>
+            </select>
+            <select name="course" id="course">
+                <option value="Select course">3 year program</option>
+                <option value="bcom">B.com</option>
+                <option value="bca">BCA</option>
+                <option value="bba">BBA</option>
+                <option value="bsc">B.sc Computer Science</option>
+                <option value="cseleet">B.Tech CSE-Leet</option>
+                <option value="fd">B.sc Fashion Desiging</option>
+            </select>
+            <select name="course" id="course">
+                <option value="Select course">Master's program</option>
+                <option value="mca">MCA</option>
+                <option value="mba">MBA</option>   
+            </select>
+            <br> <br>
+            
+            <div id="reset">
+                <button type="reset" value="reset">Reset</button>
+            </div>
+            
+            
+           <div id="button">
+                <button type="submit" >Submit</button>
+            </div>
+            
+        </form>
+
+    </div>
+        
+    </body>
+    
+</html>
